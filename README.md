@@ -1,16 +1,17 @@
-## Hi there 👋
+# Hi there! I'm Ankit Suthar 👋
 
-<!--
-**techno-ankitt/techno-ankitt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a **B.Tech 3rd year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about building secure applications and exploring data-driven insights.
 
-Here are some ideas to get you started:
+### 💻 Tech Stack & Tools
+* **Languages**: Python, C/C++
+* **Specialization**: Data Science, Machine Learning, Blockchain
+* **Design & Tools**: SketchUp (3D Home Design), VS Code
+* **Hardware**: Working on my ASUS TUF F15 Gaming laptop
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 Projects
+* **Weather-CLI Tool**: A secure terminal-based tool to fetch real-time weather data using OpenWeatherMap API.
+* **Portfolio Website**: Check out my work at [techno-ankitt.vercel.app](https://techno-ankitt.vercel.app/).
+
+### 📫 How to reach me
+* **Portfolio**: [techno-ankitt.vercel.app](https://techno-ankitt.vercel.app/)
+* **GitHub**: @techno-ankitt
