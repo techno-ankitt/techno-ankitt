@@ -5,7 +5,7 @@ I am a **B.Tech 3rd year student** specializing in **Computer Science and Engine
 ### 💻 Tech Stack & Tools
 * **Languages**: Python, C/C++, Java
 * **Specialization**: Data Science, Machine Learning
-* **Design & Tools**: VS Code,Jupyter Notebook, Replit, SketchUp,Pycharm
+* **Design & Tools**: VS Code,Jupyter Notebook, Replit, SketchUp, Pycharm
 * **Hardware**: Working on my ASUS TUF F15 Gaming laptop
 
 ### 🚀 Projects
