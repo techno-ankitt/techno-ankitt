@@ -1,4 +1,4 @@
-# Hi there! I'm Ankit Suthar. 👋
+# Hi I'm Ankit Suthar. 👋
 
 I am a **B.Tech 3rd year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about Building Projects & Exploring AI.
 
