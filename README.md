@@ -1,4 +1,3 @@
-New puzzle game coming 
 # Hi I'm Ankit Suthar. 👋
 
 A **B.Tech 3rd year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about Building Projects & Exploring AI.
