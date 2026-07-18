@@ -6,4 +6,6 @@ sayad github bhi mujhse naraz hai, aur hona bhi chahiye.
 kher ye sab to mnahaj baatein hai, kitni bhi bnalo. 
 me tumse ye kehna aaya tha github ki, me JAVA ki ek series start kar rha hu jiske andr me saare chote se chote topics ki bhi repo bnakar tumhe diya karuga, kya pata uske baad tum maan jao.
 
+theek hai , milte hai jld hi ek cute si repo ke sath, kosis karuga ab tumhe naraz na karu
 
+see you soon buddy.
