@@ -1,7 +1,4 @@
  **B.Tech 4th year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about Building Projects & Exploring AI.
-sayad github bhi mujhse naraz hai, aur hona bhi chahiye.
-kher ye sab to mnahaj baatein hai, kitni bhi bnalo. 
-me tumse ye kehna aaya tha github ki, me JAVA ki ek series start kar rha hu jiske andr me saare chote se chote topics ki bhi repo bnakar tumhe diya karuga, kya pata uske baad tum maan jao.
 
 ### 💻 Tech Stack & Tools
 * **Languages**: Python, C/C++, Java
