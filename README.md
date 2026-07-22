@@ -1,4 +1,6 @@
- **B.Tech 4th year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about Building Projects & Exploring AI.
+# Hi I'm Ankit Suthar. 👋
+
+A **B.Tech 4th year student** specializing in **Computer Science and Engineering (Data Science)**. I am passionate about Building Projects & Exploring AI.
 
 ### 💻 Tech Stack & Tools
 * **Languages**: Python, C/C++, Java
