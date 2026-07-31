@@ -65,3 +65,53 @@ document.querySelectorAll(".service-card").forEach(card => {
     });
   }
 });
+
+// -----------------------------
+// SMOOTH REVERSE-LOOP TYPEWRITER ANIMATION
+// -----------------------------
+const typingText = document.getElementById("typing-text");
+const words = [
+  "B.Tech CSE Student (Data Science)",
+  "Python & Java Developer",
+  "Machine Learning Enthusiast",
+  "Data Analytics Learner"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  if (!typingText) return;
+
+  const currentWord = words[wordIndex];
+
+  if (isDeleting) {
+    // Letter-by-letter backspace (Reverse Motion)
+    typingText.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    // Letter-by-letter typing (Forward Motion)
+    typingText.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+  }
+
+  // Dynamic typing speed control
+  let typeSpeed = isDeleting ? 30 : 60; // Deleting is slightly faster
+
+  if (!isDeleting && charIndex === currentWord.length) {
+    // Pause for 2 seconds once full word is typed
+    typeSpeed = 2000;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    // Word fully deleted: Move to next word
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    typeSpeed = 300; // Brief pause before typing next word
+  }
+
+  setTimeout(typeEffect, typeSpeed);
+}
+
+// Start animation on DOM load
+document.addEventListener("DOMContentLoaded", typeEffect);
