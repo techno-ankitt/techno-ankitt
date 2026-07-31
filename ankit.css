@@ -119,29 +119,38 @@ body {
 }
 .btn.outline:hover { background: var(--teal); color: #fff; }
 
-/* CUSTOM BUTTONS (GitHub + LinkedIn) */
-.btn.github {
+/* Custom GitHub Button Hover Effect */
+.btn.github,
+.btn.github-btn {
   background: var(--github);
   color: #fff;
   border: 2px solid var(--github);
-}
-.btn.github:hover {
-  background: #000;
-  border-color: #000;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.btn.linkedin {
+.btn.github:hover,
+.btn.github-btn:hover {
+  background: #000;
+  border-color: #000;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(36, 41, 46, 0.4); /* Dark GitHub Glow */
+}
+
+/* Custom LinkedIn Button Hover Effect */
+.btn.linkedin,
+.btn.linkedin-btn {
   background: var(--linkedin);
   color: #fff;
   border: 2px solid var(--linkedin);
-}
-.btn.linkedin:hover {
-  background: #005582;
-  border-color: #005582;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.btn i {
-  margin-right: 8px;
+.btn.linkedin:hover,
+.btn.linkedin-btn:hover {
+  background: #005582;
+  border-color: #005582;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4); /* Blue LinkedIn Glow */
 }
 
 /* SECTION BASE */
@@ -257,6 +266,18 @@ textarea { resize: vertical; }
   color: #1877f2; /* Facebook blue */
 }
 
+/* ===== Experience & Certificates ===== */
+.experience-grid{display:flex;justify-content:center}
+.experience-card{display:flex;gap:24px;background:#fff;padding:28px;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.08);border-left:6px solid var(--teal)}
+.certificate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.certificate-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.08);transition:.3s}
+.certificate-card:hover,.experience-card:hover{transform:translateY(-6px)}
+.certificate-image{height:170px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--teal),#18b69b);color:#fff;font-size:64px}
+.certificate-content{padding:24px}
+@media(max-width:768px){
+.experience-card{flex-direction:column}
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero { flex-direction: column; text-align: center; }
@@ -264,4 +285,101 @@ textarea { resize: vertical; }
   .about { flex-direction: column; }
   .services-grid { grid-template-columns: 1fr; }
   .row { flex-direction: column; }
+}
+
+/* Hero CTA Buttons */
+.hero-right .btn {
+  padding: 12px 24px;
+  font-size: 15px;
+}
+
+.hero-right .btn i {
+  margin-right: 8px;
+}
+
+/* FIX: Button flows naturally with text expansion */
+.service-card {
+  display: block;
+  text-align: center;
+}
+
+.service-card .btn {
+  margin-top: 14px;
+  align-self: auto;
+}
+
+/* =========================================
+   BUTTON STYLES & INTERACTIVE HOVER EFFECTS
+   ========================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+/* Primary (Resume) Button */
+.btn.primary {
+  background: var(--teal);
+  color: #fff;
+  border: 2px solid var(--teal);
+}
+
+/* Hover: Dark background, Lift, Scale & Shadow */
+.btn.primary:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(15, 139, 120, 0.3);
+}
+
+/* Outline (Contact) Button */
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--teal);
+  color: var(--teal);
+}
+
+/* Hover: Green background, White text, Lift & Shadow */
+.btn.outline:hover {
+  background: var(--teal);
+  color: #fff;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(15, 139, 120, 0.25);
+}
+/* =========================================
+   PROFILE & ABOUT IMAGE HOVER EFFECTS
+   ========================================= */
+
+/* Option 1: Glow & Lift */
+.profile-wrap, .about-photo {
+  transition: all 0.4s ease-in-out;
+}
+
+.profile-wrap:hover, .about-photo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(15, 139, 120, 0.35);
+}
+
+.profile-img, .about-photo img {
+  transition: all 0.4s ease-in-out;
+}
+
+.profile-wrap:hover .profile-img,
+.about-photo:hover img {
+  border-color: var(--teal);
+  transform: scale(1.04);
 }
